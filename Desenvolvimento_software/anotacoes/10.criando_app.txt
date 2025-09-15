@@ -1,0 +1,22 @@
+Passo 6: Criar nosso primeiro app Django
+Agora vamos criar o app principal do CareerConnectAI:
+
+python manage.py startapp core
+
+O que vai acontecer?
+Django criará uma pasta core/ com estrutura de app
+Arquivos para models, views, urls, etc.
+Estrutura modular para nosso projeto
+
+Conceito: Apps Django
+O que são apps?
+
+Apps: Módulos independentes dentro do projeto
+Cada app: Tem uma responsabilidade específica
+Exemplo: core (usuários), career_paths (trilhas), llm_integration (IA)
+
+Estrutura de um app:
+models.py: Estrutura dos dados
+views.py: Lógica de negócio
+urls.py: URLs do app
+admin.py: Interface administrativa

@@ -1,0 +1,11 @@
+📚 Primeiro: Fundamentos que você precisa entender
+Antes de começar a codificar, vamos entender o que é Django e por que usamos:
+🔍 Conceito 1: O que é Django?
+Django é um framework web Python que segue o padrão MVC (Model-View-Controller):
+Model: Define a estrutura dos dados (banco de dados)
+View: Lógica de negócio (o que acontece quando alguém acessa uma página)
+Template: Como os dados são apresentados (HTML)
+📖 Referências de Estudo:
+Django Official Tutorial: Django Girls Tutorial - MUITO RECOMENDADO para iniciantes
+Django Documentation: Django Docs
+Python Web Development: Real Python Django

@@ -1,0 +1,26 @@
+Passo 9: Criar nossa primeira view
+
+Vamos criar uma página simples no app core:
+
+Editar o arquivo core/views.py:
+
+notepad core\views.py
+
+O que vamos fazer:
+
+Criar uma função de view simples
+Retornar uma resposta HTTP básica
+
+Testar se o app está funcionando
+
+Conceito: Views Django
+O que são views?
+Views: Funções que processam requisições HTTP
+Entrada: Requisição do usuário
+Saída: Resposta HTTP (HTML, JSON, etc.)
+
+
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Olá, CareerConnectAI!")

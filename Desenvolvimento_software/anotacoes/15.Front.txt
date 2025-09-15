@@ -1,0 +1,104 @@
+Issue: [Front-end] Página de Acesso do Site (HTML/CSS)
+
+O que vamos criar:
+
+Página inicial (landing page) do CareerConnectAI
+Design moderno e responsivo
+HTML semântico e CSS bem estruturado
+
+Passo 1: Criar estrutura de templates
+
+Primeiro, vamos criar a pasta para os templates:
+
+
+mkdir templates
+mkdir templates\core
+
+
+O que vamos fazer:
+Criar pasta templates/ na raiz do projeto
+Criar pasta templates/core/ para templates do app core
+Estrutura organizada para templates
+Conceito: Sistema de Templates do Django
+O que são templates?
+Templates: Arquivos HTML com variáveis Django
+Separação: Lógica (views) separada da apresentação (HTML)
+Reutilização: Templates podem ser herdados e reutilizados
+
+
+Estrutura recomendada:
+
+templates/
+├── base.html          # Template base
+├── core/
+│   ├── home.html      # Página inicial
+│   ├── login.html     # Página de login
+│   └── register.html  # Página de cadastro
+
+
+
+
+Conceito: Design e Desenvolvimento Front-end
+
+Figma vs Desenvolvimento:
+
+Figma: Ferramenta de design (prototipação, mockups)
+Desenvolvimento: Implementação real com HTML/CSS/JS
+Fluxo recomendado:
+Design no Figma (opcional, mas recomendado)
+Implementação com HTML/CSS
+Testes e ajustes
+Opções para nosso projeto:
+Opção 1: Design rápido (recomendado para aprender)
+Criar diretamente com HTML/CSS
+Focar no aprendizado de código
+Usar frameworks CSS (Bootstrap, Tailwind)
+Opção 2: Design no Figma primeiro
+Criar mockup no Figma
+Depois implementar o código
+Mais profissional, mas demora mais
+Opção 3: Usar template existente
+Pegar um template gratuito
+Adaptar para nosso projeto
+Mais rápido, menos aprendizado
+Minha recomendação para você:
+Vamos começar com HTML/CSS puro!
+Por que?
+Aprendizado: Você vai entender como funciona
+Controle total: Cada linha de código é sua
+Base sólida: Fundamentos de front-end
+Rápido: Resultado imediato
+Pergunta para você:
+Qual abordagem prefere?
+HTML/CSS puro (recomendado para aprender)
+Figma primeiro (mais profissional)
+Template existente (mais rápido)
+Vamos criar uma página linda com código! 😊
+
+
+Plano de Aprendizado:
+Fase 1: HTML/CSS puro (agora)
+Aprender fundamentos
+Criar página funcional
+Entender como funciona
+Fase 2: Figma (depois)
+Refinar o design
+Criar mockups profissionais
+Melhorar a experiência do usuário
+Passo 1: Criar estrutura de templates
+Vamos criar as pastas primeiro
+
+Passo 2: Configurar Django para usar templates
+Precisamos configurar o Django para encontrar nossos templates:
+Editar careerconnect/settings.py:
+Encontrar a seção TEMPLATES
+Adicionar nossa pasta templates/
+Conceito: Configuração de Templates
+O que vamos fazer:
+Django precisa saber onde estão os templates
+Configurar o diretório de templates
+Permitir que views usem templates
+
+adicionei nos settings 
+
+'templates': [BASE_DIR / 'templates'],

@@ -1,0 +1,27 @@
+Passo 2: Instalar Django
+Agora vamos instalar o Django no ambiente virtual ativo:
+
+
+pip install django
+
+
+O que vai acontecer:
+Django será instalado apenas no ambiente virtual
+Não afetará o Python global do seu sistema
+Ficará disponível apenas para este projeto
+
+Passo 3: Verificar a instalação
+
+python -m django --version
+O que esperamos ver:
+4.2.7
+(ou a versão mais recente)
+
+Passo 4: Criar requirements.txt
+
+pip freeze > requirements.txt
+
+Por que isso é importante?
+Lista todas as dependências do projeto
+Essencial para trabalho em equipe
+Outros desenvolvedores podem instalar as mesmas versões

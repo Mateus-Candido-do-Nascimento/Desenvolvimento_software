@@ -1,0 +1,62 @@
+Status atual:
+✅ Servidor Django rodando
+✅ Migrações aplicadas com sucesso
+✅ Projeto acessível no navegador
+✅ Banco de dados configurado
+
+
+Passo 5: Entender a estrutura do projeto
+
+Agora vamos entender o que foi criado! Vamos examinar os arquivos principais:
+Estrutura atual:
+
+CareerConnectAI/
+├── careerconnect/          # Configurações principais
+│   ├── __init__.py
+│   ├── settings.py         # Configurações do projeto
+│   ├── urls.py            # URLs principais
+│   ├── wsgi.py            # Servidor web
+│   └── asgi.py            # Servidor assíncrono
+├── manage.py              # Script de gerenciamento
+├── db.sqlite3             # Banco de dados (criado agora)
+├── requirements.txt       # Dependências
+└── venv/                  # Ambiente virtual
+
+
+Conceito: Arquivos principais do Django
+
+- manage.py:
+
+Script principal para gerenciar o projeto
+Comandos como runserver, migrate, createsuperuser
+
+
+- careerconnect/settings.py:
+
+Configurações do projeto
+Banco de dados, apps instalados, etc.
+
+- careerconnect/urls.py:
+
+Define as URLs principais do projeto
+Roteamento de páginas
+
+
+Pergunta para você:
+Agora vamos examinar o arquivo settings.py. Execute:
+
+type careerconnect\settings.py 
+
+Conceito: settings.py - O coração do Django
+O que é?
+
+Arquivo de configuração principal do projeto
+Define como o Django deve funcionar
+Configurações de banco, apps, segurança, etc.
+Principais seções:
+SECRET_KEY: Chave secreta para segurança
+DEBUG: Modo de desenvolvimento (True/False)
+ALLOWED_HOSTS: Hosts permitidos
+INSTALLED_APPS: Apps instalados no projeto
+DATABASES: Configuração do banco de dados
+STATIC_URL: Arquivos estáticos (CSS, JS, imagens)

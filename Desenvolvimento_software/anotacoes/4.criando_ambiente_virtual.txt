@@ -1,0 +1,58 @@
+Passo 1: Criar Ambiente Virtual
+Vamos criar um ambiente virtual para o projeto CareerConnectAI:
+
+cd CareerConnectAI
+python -m venv venv
+
+
+O que aconteceu?
+
+Criamos uma pasta venv com um ambiente Python isolado
+Agora temos um "apartamento separado" para nosso projeto
+�� Conceito: Ativação do Ambiente Virtual
+
+Por que ativar?
+
+Quando ativamos o ambiente virtual, o terminal "entra" nesse ambiente isolado. É como "entrar no apartamento" do projeto.
+
+Como ativar (Windows):
+
+venv\Scripts\activate
+
+
+Como saber se está ativo?
+
+O prompt vai mostrar (venv) no início:
+📚 Referência de Estudo:
+Python venv - Ativação
+
+
+🛠️ Solução: Usar Command Prompt (cmd)
+Passo 1: Abrir Command Prompt
+
+Pressione Windows + R
+
+Digite cmd e pressione Enter
+
+Navegue até o diretório do projeto:
+
+cd C:\Projeto-desenvolvimento\CareerConnectAI
+
+Passo 2: Ativar o ambiente virtual
+venv\Scripts\activate.bat
+
+Passo 3: Verificar se está ativo
+(venv) C:\Projeto-desenvolvimento\CareerConnectAI>
+
+O prompt deve mostrar:
+�� Por que usar cmd ao invés do PowerShell?
+cmd: Usa .bat files (mais simples)
+PowerShell: Usa .ps1 files (mais restritivo)
+�� Referência de Estudo:
+Python venv - Windows
+�� Pergunta para você:
+Execute os passos acima e me diga:
+Conseguiu abrir o cmd?
+O prompt mudou para mostrar (venv)?
+Está funcionando?
+Depois vamos instalar o Django! 😊

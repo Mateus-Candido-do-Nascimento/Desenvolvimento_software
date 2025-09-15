@@ -1,0 +1,89 @@
+Clone o repositório remoto e entre na pasta:
+
+git clone https://github.com/Nilton-Canto/CareerConnectAI.git
+cd CareerConnectAI
+
+2) Garantir que tem as últimas referências do remoto
+git fetch origin
+
+
+Atualize main e develop localmente (se develop existir remotamente):
+
+# atualizar main
+git checkout main
+git pull origin main
+
+# atualizar develop (se existir)
+git checkout develop 2>/dev/null || git checkout -b develop origin/develop
+git pull origin develop
+
+
+Se git checkout develop falhar porque a branch não existe localmente, o segundo comando cria-a a partir do remoto.
+
+3) Criar sua branch de feature (sempre a partir de develop)
+
+Escolha um nome claro: feature/NN-descricao-curta (NN = número da issue).
+
+git checkout develop
+git pull origin develop         # garante que develop está atualizada
+git checkout -b feature/33-criar-github-project
+
+4) Trabalhar localmente (commits seguros)
+
+Faça mudanças, adicione e commit:
+
+git add .
+git commit -m "feat(issue-33): cria estrutura inicial do GitHub Project"
+
+
+Use commits pequenos e frequentes.
+
+Use Conventional Commits (feat:, fix:, chore:).
+
+5) Sincronizar sua branch com o trabalho da equipe (periodicamente)
+
+Para evitar conflitos acumulados, traga mudanças de develop para sua branch regularmente:
+
+git fetch origin
+git checkout develop
+git pull origin develop
+git checkout feature/33-criar-github-project
+git merge develop
+
+
+Resolva conflitos manualmente (veja seção abaixo).
+
+Após merge: git add <arquivos-resolvidos> e git commit (se necessário).
+
+Alternativa avançada (rebase) existe, mas como é trabalho em grupo recomendo merge para evitar reescrever histórico compartilhado.
+
+6) Push para o remoto (quando quiser compartilhar)
+git push -u origin feature/33-criar-github-project
+
+
+-u cria o upstream para facilitar futuros git push/git pull.
+
+7) Abrir Pull Request (PR) no GitHub
+
+Base branch do PR: develop.
+
+Branch de comparação: sua feature/*.
+
+Use descrição clara: link para issue, checklist, como testar localmente, prints se UI.
+
+Marque pelo menos 1 revisor e, se a PR não estiver pronta, abra como Draft PR.
+
+8) Após aprovação — merge seguro
+
+Quem for responsável (combinar no time) faz o merge no GitHub — preferencialmente usando o método definido pelo time (Merge commit ou Squash).
+❗ Nunca faça merge direto em main sem a política do time: develop → main só quando estiver pronto.
+
+9) Limpeza (após merge)
+
+Apague a branch remota e local:
+
+# apagar remota (pode ser feito via GitHub UI também)
+git push origin --delete feature/33-criar-github-project
+
+# apagar local
+git branch -d feature/33-criar-github-project
