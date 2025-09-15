@@ -1,0 +1,67 @@
+Status atual:
+✅ App core criado
+✅ Estrutura completa do app
+✅ Arquivos principais criados
+Passo 7: Configurar o app no projeto
+Agora precisamos registrar o app core no arquivo settings.py:
+Vamos editar o arquivo:
+
+notepad careerconnect\settings.py
+
+
+O que vamos fazer:
+
+Adicionar 'core' na lista INSTALLED_APPS
+
+Isso diz ao Django que o app existe
+
+Conceito: INSTALLED_APPS
+O que é?
+
+Lista de apps que o Django deve carregar
+Cada app deve ser registrado aqui
+Apps padrão do Django já estão incluídos
+
+Apps padrão:
+django.contrib.admin: Interface administrativa
+django.contrib.auth: Sistema de usuários
+django.contrib.contenttypes: Tipos de conteúdo
+django.contrib.sessions: Gerenciamento de sessões
+
+
+Adicionar o app core ao INSTALLED_APPS
+O que vamos fazer:
+Encontrar a lista INSTALLED_APPS no arquivo settings.py
+Adicionar 'core' na lista
+Salvar o arquivo
+
+
+Localize esta seção no arquivo:
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
+
+Adicione 'core' na lista:
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'core',  # ← Adicione esta linha
+]
+
+Conceito: Registro de Apps
+Por que registrar?
+Django precisa saber quais apps existem
+Apps não registrados não funcionam
+Permite usar funcionalidades do app

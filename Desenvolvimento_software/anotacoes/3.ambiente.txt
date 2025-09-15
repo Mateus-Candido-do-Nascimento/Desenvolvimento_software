@@ -1,0 +1,68 @@
+� Vamos verificar seu ambiente primeiro
+Antes de começar, vamos ver se você tem tudo configurado corretamente:
+Teste 1: Verificar Python
+python --version
+Vamos ver qual versão do Python você tem:
+Teste 2: Verificar pip
+pip --version
+Teste 3: Verificar Git
+git --version
+🤔 Pergunta importante:
+Você já tem algum desses instalados?
+Python 3.8 ou superior
+pip (gerenciador de pacotes)
+Git (para versionamento)
+🗺️ Nosso próximo passo:
+Se você já tem tudo instalado, vamos:
+Criar um ambiente virtual (para isolar as dependências do projeto)
+Instalar Django
+Criar seu primeiro projeto Django
+Entender a estrutura de pastas
+
+
+📚 Conceito que vamos aprender:
+Ambiente Virtual (Virtual Environment)
+Por que usar? Evita conflitos entre projetos
+Como funciona? Cria um ambiente isolado para cada projeto
+Referência: Python Virtual Environments
+
+
+🔍 Conceito 1: Ambiente Virtual (Virtual Environment)
+O que é?
+Um ambiente virtual é como uma "caixa isolada" onde você instala as dependências específicas do seu projeto, separadas do Python global do seu sistema.
+Por que usar?
+Imagine que você tem 3 projetos:
+Projeto A: Usa Django 3.2
+Projeto B: Usa Django 4.2
+Projeto C: Usa Flask
+Sem ambiente virtual: Todos usariam a mesma versão, causando conflitos!
+Com ambiente virtual: Cada projeto tem suas próprias dependências isoladas.
+Analogia:
+É como ter apartamentos separados para cada projeto, ao invés de todos morarem na mesma casa! 🏠
+
+🔍 Conceito 2: pip (Package Installer for Python)
+O que é?
+É o gerenciador de pacotes oficial do Python. É como uma "loja de aplicativos" para Python.
+Comandos básicos:
+
+pip install django          # Instala o Django
+pip list                    # Lista pacotes instalados
+pip freeze                  # Lista com versões exatas
+
+
+🔍 Conceito 3: Django Framework O que é?
+
+Django é um framework web que facilita a criação de aplicações web complexas.
+Princípios do Django:
+DRY (Don't Repeat Yourself): Não repita código
+Convenção sobre Configuração: Django assume padrões sensatos
+Rápido desenvolvimento: Foco na produtividade
+Arquitetura MVC do Django:
+Model: Define estrutura dos dados (banco)
+View: Lógica de negócio (controlador)
+Template: Apresentação (HTML)
+
+📚 Referências de Estudo:
+Ambientes Virtuais: Python.org - venv
+pip: pip Documentation
+Django Philosophy: Django Design Philosophy

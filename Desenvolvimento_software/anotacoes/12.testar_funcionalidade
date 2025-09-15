@@ -1,0 +1,15 @@
+Status atual:
+✅ App core criado
+✅ App core registrado no INSTALLED_APPS
+✅ Projeto configurado corretamente
+
+Passo 8: Testar se está funcionando
+
+Agora vamos testar se o app está funcionando:
+
+python manage.py runserver
+
+O que esperamos:
+Servidor deve iniciar sem erros
+Nenhuma mensagem sobre apps não encontrados
+Projeto funcionando normalmente

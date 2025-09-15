@@ -1,0 +1,49 @@
+Status atual:
+
+✅ View home criada no core/views.py
+✅ Servidor funcionando sem erros
+✅ Página acessível (código 200 = sucesso)
+
+Passo 10: Configurar URLs para nossa view
+
+Agora precisamos conectar nossa view às URLs do projeto:
+
+Editar o arquivo careerconnect/urls.py:
+
+notepad careerconnect\urls.py
+
+O que vamos fazer:
+Importar nossa view home
+Adicionar uma URL para ela
+Conectar a página inicial
+
+Conceito: Sistema de URLs do Django
+O que são URLs?
+URLs: Mapeiam endereços web para views
+Exemplo: / → view home
+Roteamento: Direciona requisições para funções corretas
+
+from django.contrib import admin
+from django.urls import path
+from core.views import home  # ← Importar nossa view
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', home, name='home'),  # ← Adicionar nossa URL
+]
+
+agora rode o nosso servidor:
+
+python manager.py runserver
+
+Conceito: Sistema de URLs
+O que acontece:
+path('', home, name='home'): Mapeia a URL raiz / para nossa view home
+name='home': Dá um nome à URL para referenciar depois
+
+ocê criou com sucesso:
+✅ Projeto Django completo
+✅ App core configurado
+✅ Primeira view funcionando
+✅ Sistema de URLs configurado
+✅ Página web funcionando

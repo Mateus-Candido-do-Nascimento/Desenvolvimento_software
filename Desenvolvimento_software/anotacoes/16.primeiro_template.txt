@@ -1,0 +1,105 @@
+Status atual:
+✅ Pasta templates/ criada
+✅ Pasta templates/core/ criada
+✅ Estrutura correta para templates
+✅ Django configurado para usar templates
+Passo 2: Criar nosso primeiro template
+Agora vamos criar a página inicial (landing page) do CareerConnectAI:
+
+Criar arquivo templates/core/home.html:
+
+notepad templates\core\home.html
+
+Conceito: Template HTML do Django
+O que vamos criar:
+HTML semântico: Estrutura clara e acessível
+CSS moderno: Design responsivo e bonito
+Conteúdo relevante: Informações sobre o CareerConnectAI
+
+
+estrutura da página:
+
+--Header: Logo e navegação
+--Hero Section: Título principal e call-to-action
+--Features: Funcionalidades principais
+--Footer: Informações de contato
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnectAI - Plataforma Inteligente de Estágios e Vagas</title>
+    <style>
+        /* CSS será adicionado aqui */
+    </style>
+</head>
+<body>
+    <!-- Conteúdo da página será adicionado aqui -->
+</body>
+</html>
+
+Passo 4: Adicionar conteúdo HTML
+Vamos criar uma página inicial moderna e atrativa:
+Adicione este conteúdo no <body> do arquivo
+
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🎯 CareerConnectAI</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="#contato">Contato</a>
+                <a href="/login/" class="btn-login">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Conecte-se ao Futuro da sua Carreira</h1>
+            <p>Plataforma inteligente que conecta estudantes e empresas através de trilhas de carreira personalizadas com IA</p>
+            <div class="hero-buttons">
+                <a href="/register/" class="btn-primary">Começar Agora</a>
+                <a href="#sobre" class="btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="funcionalidades" class="features">
+        <h2>Funcionalidades Principais</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🎯 Trilhas Personalizadas</h3>
+                <p>Crie planos de carreira personalizados com auxílio de IA</p>
+            </div>
+            <div class="feature-card">
+                <h3>🤖 Assistente IA</h3>
+                <p>Chat inteligente para dúvidas sobre carreira e desenvolvimento</p>
+            </div>
+            <div class="feature-card">
+                <h3>�� Acompanhamento</h3>
+                <p>Monitore seu progresso e conquiste seus objetivos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CareerConnectAI. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+
+Conceito: Estrutura Semântica
+O que criamos:
+<header>: Cabeçalho com navegação
+<section>: Seções principais da página
+<footer>: Rodapé com informações

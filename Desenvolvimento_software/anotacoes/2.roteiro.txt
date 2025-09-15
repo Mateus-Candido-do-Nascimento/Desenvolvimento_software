@@ -1,0 +1,14 @@
+🗺️ Nosso Plano de Aprendizado:
+Fase 1: Fundamentos (Semana 1)
+✅ Entender o que é Django
+✅ Configurar ambiente de desenvolvimento
+✅ Criar primeiro projeto Django
+✅ Entender a estrutura de pastas
+Fase 2: Primeiros Passos (Semana 2)
+✅ Criar primeiro app
+✅ Entender Models, Views, Templates
+✅ Criar primeira página
+Fase 3: Funcionalidades (Semana 3+)
+✅ Sistema de usuários
+✅ Banco de dados
+✅ APIs REST

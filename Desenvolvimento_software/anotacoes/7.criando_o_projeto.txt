@@ -1,0 +1,49 @@
+Passo 3: Criar nosso primeiro projeto Django
+
+Agora vamos criar o projeto principal do CareerConnectAI:
+
+django-admin startproject careerconnect .
+
+Passo 2: Criar projeto Django completo
+
+O que vai acontecer?
+
+Django criará a pasta careerconnect/ com configurações
+
+Criará o manage.py correto
+
+Estrutura completa do projeto
+
+Conceito: Estrutura completa do Django
+
+O que é necessário?
+
+careerconnect/: Configurações principais
+manage.py: Script de gerenciamento
+careerconnect/settings.py: Configurações do projeto
+careerconnect/urls.py: URLs principais
+
+
+Passo 3: Testar se o projeto funciona
+Agora vamos testar se o projeto Django está funcionando:
+
+python manage.py runserver
+
+O que vai acontecer?
+
+Django vai iniciar o servidor de desenvolvimento
+Vai mostrar uma mensagem como "Starting development server at http://127.0.0.1:8000/"
+O projeto estará rodando localmente
+
+Conceito: Servidor de Desenvolvimento
+O que é?
+
+Servidor web simples do Django
+Usado apenas para desenvolvimento
+Recarrega automaticamente quando você faz mudanças
+
+Por que usar?
+
+Testa o projeto localmente
+Facilita desenvolvimento
+Não precisa de servidor web complexo
