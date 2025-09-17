@@ -103,3 +103,15 @@ O que criamos:
 <header>: Cabeçalho com navegação
 <section>: Seções principais da página
 <footer>: Rodapé com informações
+
+Você criou o template HTML
+Mas a view ainda está retornando HttpResponse (texto simples)
+Precisamos modificar a view para usar o template
+Solução: Modificar a view para usar o template
+Editar o arquivo core/views.py:
+Substituir o conteúdo atual por:
+
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'core/home.html')
